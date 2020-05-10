@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gotu&family=Roboto&display=swap');
+
+*{
+
+	box-sizing:border-box;
+	margin:0;  
+}
+
+body{
+	background:#2C3E50 
+	;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+header{
+	background:#85929E ;
+	height:100px;
+	
+}
+
+.container{
+	height:800px;
+	
+}
+
+footer{
+	background:#85929E;
+	height:100px;
+	text-align:center;
+	padding-top:30px;
+	font-size:20px;  
+}

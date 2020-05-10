@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gotu&family=Roboto&display=swap');
+
+/* small screen */
+@media (min-width: 600px) {
+	#menu{
+		display:flex;
+	}
+}
+
+/* large screen */
+@media (min-width: 800px) {
+
+}
+
+*{
+
+	box-sizing:border-box;
+	margin:0;  
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background:#2C3E50 
+	;
+	background-image: url(../asset/img/umbreon2.png);
+	background-attachment:fixed; 
+	background-size: 200px;
+	font-family: 'Alfa Slab One', cursive;
+	
+}
+
+.container{
+	height:3500px;	
+}
+
+
+/* menu */
+
+#header{
+	background:#000033;
+	height:100px;
+	width: 100%;
+	font-size:18px;
+	border:8px groove#B39DDB; 
+	transition-duration: 3s;
+	position: fixed;
+}
+
+.hide{
+	position:absolute;
+	left:0;
+	top:-100px;
+	z-index:2;
+	
+}
+
+header>.menu{
+	list-style:none;
+	display:flex;
+	float:right;	
+	padding-top:30px;
+}
+
+.menu li a{
+	display:inline-block;
+	padding-right:50px;
+	text-decoration:none;
+	border-radius:4px 4px 0 0;	
+}
+
+.menu li a:hover{
+	color:#F06292;
+	transition:0.4s;
+	font-size: 24px;
+}
+
+.details.active{
+	background:#333;
+	color:#fff;
+	display:block;
+}
+
+.details{
+	display:none;
+}
+
+/* top */
+
+#top{
+	height:700px;
+	border:20px groove #E91E63;
+	cursor: pointer;
+}
+
+.umbreon1{
+	background-image: url(../asset/img/back_umbreon1.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	transition-duration: 3s;
+}
+
+.umbreon2{
+	background-image: url(../asset/img/back_umbreon2.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	transition-duration: 3s;
+}
+
+.umbreon3{
+	background-image: url(../asset/img/back_umbreon3.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;
+	transition-duration: 3s;
+}
+
+/* main */
+
+#main{
+	height:400px;
+	background:#FFFF00 ;
+	padding-top: 10px;
+	border-radius:10%;
+}
+
+ ul {
+	list-style:none;
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+  cursor:pointer;
+}
+
+img{
+	width: 160px;
+	z-index:3;
+}
+
+li img:hover{
+	width:220px;
+	transition: 1s;
+	transform: rotate(360deg);
+}
+
+.black{
+	opacity:0.3;
+}
+
+/* window */
+
+#close{
+	cursor:pointer;
+	width:200px;
+	border:1px solid #ccc;
+	border-radius:4px;
+	text-align:center;
+	padding:12px 0;
+	margin:16px auto 0;
+}
+
+#mask{
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:1;
+}
+
+#mask.hidden{
+	display:none;
+}
+
+#modal{
+	background:#fff;
+	width:300px;
+	padding:20px;
+	border-radius:4px;
+	position:absolute;
+	top:40px;
+	left:0;
+	right:0;
+	margin: 0 auto;
+	transition:transform 0.4s;
+	z-index:2;
+}
+
+#modal > p{
+	margin:0 0 20px;
+}
+
+#modal.hidden{
+	transform:translate(0,-500px);
+}
+
+/* blank */
+
+#messa{
+	height:400px;
+	background-image: url(../asset/img/umbreon2.png);
+	background-attachment:fixed; 
+	background-size: 200px;
+}
+
+#blank{
+	height:200px;
+	background-image: url(../asset/img/umbreon2.png);
+	background-attachment:fixed; 
+	background-size: 200px;
+}
+
+/* profile */
+
+#profile{
+	height:700px;
+	background: #E91E63;
+	border-radius:50%;
+}
+
+h1,h2{
+	text-align: center;
+	padding-top:40px;
+}
+
+.none{
+	opacity:0;
+}
+
+#profile #reason{
+	text-align: center;
+	font-size:30px;
+	line-height:60px;
+	margin-top:30px;
+}
+
+#a1,#a2,#a3,#reason{
+	transition: 5s;
+	transform: scale();
+}
+
+#q1,#q2,#q3,#q4{
+	color:#FFFF00;
+}
+
+#q1,#q2,#q3,#q4:hover{
+	color:blue;
+	cursor: pointer;
+}
+
+/* contact */
+
+#contact{
+	height:800px;
+	background:#FAFAFA ;
+	width:75%;
+	margin:0 auto;
+	border-radius: 40px;
+}
+
+
+.infs{
+	padding:40px;	
+	font-size: 22px;
+}
+
+.inf{
+	text-align: center;
+}
+
+input.con{
+	width: 500px;
+	height:50px;
+	margin: 30px;
+}
+
+.message{
+	margin:30px;
+}
+
+input.button{
+	color: white;
+	padding-top:10px;
+	padding-right:80px;
+	padding-bottom:10px;
+	padding-left:80px;
+	background:blue;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+/* footer */
+
+footer{
+	background:#330066;
+	height:100px;
+	text-align:center;
+	padding-top:30px;
+	font-size:20px; 
+	padding-bottom:30px; 
+	position:relative;
+}
+
+footer>img{
+	float:right;
+	width:120px;
+	position:absolute;
+	top:-20px;
+}
